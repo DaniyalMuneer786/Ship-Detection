@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship Object Detection</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <h1>Ship Object Detection</h1>
+        <p>Upload an image, and we will detect ships in the water!</p>
+
+        <!-- Upload Section -->
+		<form action="/detect" method="POST" enctype="multipart/form-data"> <!-- Form to submit the uploaded photo to other page -->
+
+        <div class="upload-box">
+            <label for="file-input" class="upload-label">
+                <span>📷 Click to Upload</span>
+                <input type="file" id="file-input" name="file" accept="image/*">
+            </label>
+            <div id="image-preview"></div>
+        </div>
+    </form>
+
+        <!-- Submit Button -->
+        <button id="submit-btn">Detect Ships</button>
+        
+        <!-- Placeholder for Results -->
+        <div id="results"></div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

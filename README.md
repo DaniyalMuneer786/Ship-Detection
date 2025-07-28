@@ -46,10 +46,6 @@ cpp
 Copy
 Edit
 http://127.0.0.1:5000/
-🖼️ Screenshots
-Upload section and result display interface
-
-(Insert your frontend screenshot here, e.g., static/images/screenshot.png)
 
 📁 Folder Structure
 app.py - Flask backend
